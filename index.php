@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet"
-          href="bootstrap.min.css"
+          href="css/bootstrap.min.css"
         >
     <!-- Optional theme -->
     <link rel="stylesheet"
-          href="bootstrap-theme.min.css"
+          href="css/bootstrap-theme.min.css"
         >
     <!-- jquery -->
-    <script language="javascript" src="jquery-1.11.3.js"></script>
+    <script language="javascript" src="/js/jquery-1.11.3.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script language="javascript" src="bootstrap.min.js"></script>
-    <script language="javascript" src="script.js"></script>
+    <script language="javascript" src="/js/bootstrap.min.js"></script>
+    <script language="javascript" src="/js/script.js"></script>
     <title>cetera SQL</title>
 </head>
 
@@ -43,7 +43,7 @@
             <div class="form-group">
                 Пожалуйста, выберите хотя бы одну категорию.
                 <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button"
+                    <button class="btn btn-info dropdown-toggle" type="button"
                             id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="true">
                         Категория
@@ -64,13 +64,13 @@
 
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button type="reset" class="btn btn-default">Очистить поля</button>
+                    <button type="reset" class="btn btn-danger">Очистить поля</button>
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button type="button" id = "sent" class="btn btn-default">Отправить отзыв</button>
+                    <button type="button" id = "sent" class="btn btn-success">Отправить отзыв</button>
                 </div>
             </div>
         </form>
