@@ -2,7 +2,7 @@
 include_once(__DIR__ . '/config.php');
 require_once(__DIR__ . '/functions.php');
 $table = EMAIL_NAME;
-$email = $_GET['email'];
+$email = htmlspecialchars($_GET['email']);
 $pdo = dbConnection();
 try {
     $stmt = $pdo -> prepare("
@@ -14,6 +14,6 @@ try {
     if (  !$name ) {$name = '';}
     echo json_encode($name);
 }catch (PDOException $e){
-    echo "Selection error: " . $e -> getMessage();
+    echo "Selection name error: " . $e -> getMessage();
     die;
 }

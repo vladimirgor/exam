@@ -7,7 +7,7 @@ define('DB_NAME','cetera');
 define('EMAIL_NAME','email_name');
 define('CATEGORIES','categories');
 define('COMMENTS','comments');
-define('COMMENT_CATEGORIES','comment_categories');
+define('COMMENT_CATEGORY','comment_category');
 //Categories
 $categories = [
     'Скорость_ответа'
